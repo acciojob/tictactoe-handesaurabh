@@ -1,1 +1,44 @@
 /*  your css code here. If applicable */
+ body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      text-align: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+    input {
+      margin: 5px;
+      padding: 6px;
+    }
+    button {
+      padding: 6px 12px;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 5px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .cell {
+      background-color: pink;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      cursor: pointer;
+      user-select: none;
+    }
+    .message {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .win {
+      background-color: purple !important;
+      color: white;
+    }
