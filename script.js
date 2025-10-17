@@ -1,7 +1,7 @@
 //your JS code here. If required.
 let startBtn = document.getElementById("submit");
-let p1Input = document.getElementById("player-1");
-let p2Input = document.getElementById("player-2");
+let p1Input = document.getElementById("player1");
+let p2Input = document.getElementById("player2");
 let playerSection = document.getElementById("player-inputs");
 let gameSection = document.getElementById("game");
 let message = document.querySelector(".message");
