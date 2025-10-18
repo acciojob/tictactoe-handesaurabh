@@ -1,4 +1,3 @@
-//your JS code here. If required.
 let startBtn = document.getElementById("submit");
 let p1Input = document.getElementById("player1");
 let p2Input = document.getElementById("player2");
@@ -6,7 +5,7 @@ let playerSection = document.getElementById("player-inputs");
 let gameSection = document.getElementById("game");
 let message = document.querySelector(".message");
 let cells = document.querySelectorAll(".cell");
-let p1, p2, currentPlayer, turn = "X";
+let p1, p2, currentPlayer, turn = "x";
 let board = ["", "", "", "", "", "", "", "", ""];
 let gameActive = true;
 
@@ -38,7 +37,7 @@ cells.forEach((cell, index) => {
     cell.textContent = turn;
 
     if (checkWin()) {
-      message.textContent = `${currentPlayer}, congratulations you won!`;
+      message.textContent = `${currentPlayer} congratulations you won!`;
       gameActive = false;
       highlightWin();
       return;
@@ -50,7 +49,7 @@ cells.forEach((cell, index) => {
       return;
     }
 
-    turn = turn === "X" ? "O" : "X";
+    turn = turn === "x" ? "o" : "x";
     currentPlayer = currentPlayer === p1 ? p2 : p1;
     message.textContent = `${currentPlayer}, you're up`;
   });
